@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+
+// auth components styles
+#pn_id_6_content > div:nth-child(3) > p-password > div {
+    width: 100%;
+    input {
+        width: 100%;
+    }
+}
+
+#pn_id_7_content > div:nth-child(3) > p-password > div {
+    width: 100%;
+    input {
+        width: 100%;
+    }
+}
+
+#pn_id_7_content > div:nth-child(5) > p-calendar > span {
+    width: 100%;
+}
+
+.p-tabview-nav-container > div > ul > li {
+    width: 50%;
+    a {
+        display: flex;
+        justify-content: center;
+    }
+}
+// end auth components

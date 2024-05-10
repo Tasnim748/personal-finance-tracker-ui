@@ -1,0 +1,37 @@
+<div class="main">
+    <div class="auth-card">
+        <p-tabView>
+            <p-tabPanel header="Sign in">
+                <div class="username-pass">
+                    <label for="username">Username</label>
+                    <input type="text" pInputText [(ngModel)]="username" />
+                </div>
+                <br>
+                <div class="username-pass">
+                    <label for="password">Password</label>
+                    <p-password [(ngModel)]="password" [feedback]="false" toggleMask="true" />
+                </div>
+                <br>
+                <p-button label="Sign in" />
+            </p-tabPanel>
+            <p-tabPanel header="Register">
+                <div class="username-pass">
+                    <label for="username">Username</label>
+                    <input type="text" pInputText [(ngModel)]="username" />
+                </div>
+                <br>
+                <div class="username-pass">
+                    <label for="password">Password</label>
+                    <p-password [(ngModel)]="password" [feedback]="false" toggleMask="true" />
+                </div>
+                <br>
+                <div class="username-pass">
+                    <label for="dob">Date of Birth</label>
+                    <p-calendar [(ngModel)]="date" />
+                </div>
+                <br>
+                <p-button label="Register" />
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+</div>
