@@ -31,7 +31,7 @@ export class TabsComponent implements OnInit {
   items: MenuItem[] = [
     {
       label: 'Transactions',
-      icon: 'pi pi-star',
+      icon: 'pi pi-wallet',
       routerLink: 'transactions',
     },
     {

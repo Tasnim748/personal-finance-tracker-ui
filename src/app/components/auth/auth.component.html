@@ -1,36 +1,33 @@
 <div class="main">
-    <div class="auth-card">
+    <div class="auth-card shadow-3 hover:shadow-5 transition-all transition-duration-400">
         <p-tabView>
             <p-tabPanel header="Sign in">
-                <div class="username-pass">
+                <div class="field my-field">
                     <label for="username">Username</label>
-                    <input type="text" pInputText [(ngModel)]="username" />
+                    <input type="text" pInputText [(ngModel)]="username" class="w-full" />
                 </div>
-                <br>
-                <div class="username-pass">
+                <div class="field my-field">
                     <label for="password">Password</label>
-                    <p-password [(ngModel)]="password" [feedback]="false" toggleMask="true" />
+                    <p-password [(ngModel)]="password" [feedback]="false" toggleMask="true" styleClass="w-full" />
                 </div>
                 <br>
-                <p-button label="Sign in" />
+                <p-button label="Sign in" styleClass="w-full" />
             </p-tabPanel>
             <p-tabPanel header="Register">
-                <div class="username-pass">
+                <div class="field my-field">
                     <label for="username">Username</label>
-                    <input type="text" pInputText [(ngModel)]="username" />
+                    <input type="text" pInputText [(ngModel)]="username" class="w-full" />
                 </div>
-                <br>
-                <div class="username-pass">
+                <div class="field my-field">
                     <label for="password">Password</label>
-                    <p-password [(ngModel)]="password" [feedback]="false" toggleMask="true" />
+                    <p-password [(ngModel)]="password" [feedback]="false" toggleMask="true" styleClass="w-full" />
                 </div>
-                <br>
-                <div class="username-pass">
+                <div class="field my-field">
                     <label for="dob">Date of Birth</label>
-                    <p-calendar [(ngModel)]="date" />
+                    <p-calendar [(ngModel)]="date" styleClass="w-full" />
                 </div>
                 <br>
-                <p-button label="Register" />
+                <p-button label="Register" styleClass="w-full" />
             </p-tabPanel>
         </p-tabView>
     </div>

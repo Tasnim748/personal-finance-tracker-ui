@@ -1,0 +1,42 @@
+<p-toast />
+<p-confirmDialog />
+<p-table [value]="expenses" [tableStyle]="{ 'min-width': '50rem' }"
+    styleClass="border-200 border-1 border-round-md border-solid overflow-hidden">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Budget</th>
+            <th>Paid</th>
+            <th>Due</th>
+            <th class="text-right">Edit</th>
+            <th class="text-center">Complete</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-expense>
+        <tr>
+            <td>{{ expense.title }}</td>
+            <td>{{ expense.dueDate }}</td>
+            <td>{{ expense.category }}</td>
+            <td>{{ expense.budget }}</td>
+            <td>{{ expense.paid }}</td>
+            <td>{{ expense.due }}</td>
+            <td class="text-right">
+                <i class="pi pi-pen-to-square cursor-pointer font-medium"></i>
+            </td>
+            <td class="text-center">
+                @if (expense.complete) {
+                    <i class="pi pi-check-square cursor-pointer font-bold text-green-500"></i>
+                } @else {
+                    <i 
+                    class="pi pi-clock cursor-pointer font-bold text-400" 
+                    pTooltip="If you mark it as complete with due, the due will be considered as save!" 
+                    tooltipPosition="left"
+                    (click)="confirmComplete($event, expense.id, expense.title)"
+                    ></i>
+                }
+            </td>
+        </tr>
+    </ng-template>
+</p-table>

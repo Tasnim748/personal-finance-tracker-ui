@@ -1,1 +1,10 @@
-<p>transactions works!</p>
+<div class="grid main-holder">
+    <div class="col-3">
+        <p-menu [model]="items" styleClass="w-full" />
+    </div>
+    <div class="col-9">
+        <div class="card">
+            <app-table [expenses]="expenses" />
+        </div>
+    </div>
+</div>
