@@ -1,27 +1,17 @@
-# FinanceTracker
+# Expense Tracker and Budgeting App UI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+This is the UI of an web based Expense Tracker and Budgeting Application. A user can register and login into this application and can track their overall finances. User can do the following things:
+## User registration
+A user can register their personal account in this web based platform and can manage their finances securely. This is handled with robust authentication and authorization system, so that everyone's finance records are secure from others.
 
-## Development server
+## Input daily expenses
+User can record their daily expenses which are out of plan.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Input and manage planned budgets
+User can input their planned budgets and from that can also input how much is spent. From this the due amount/ save will be calculated.
 
-## Code scaffolding
+## Input and manage loans and due dates
+User can manage their pending loans.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Upload necessary finance related documents
+One can upload his/her related documents of finances and keep in an organized way.
